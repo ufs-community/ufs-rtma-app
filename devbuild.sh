@@ -11,7 +11,7 @@ elif [[ -d /cm ]] ; then
     PLATFORM=wcoss_c
 elif [[ -d /ioddev_dell ]]; then
     . $MODULESHOME/init/sh
-    PLATFORM=wcoss_d
+    PLATFORM=wcoss_dell_p3
 elif [[ -d /scratch1 ]] ; then
     . /apps/lmod/lmod/init/sh
     PLATFORM=hera
@@ -48,7 +48,7 @@ usage () {
   echo "  $0 help   (show this help)"
   echo ""
   echo " The build script will automatically determine current HPC platform."
-  echo " Don't use the 'kjet' optin if you will run GSI on other jet (such as xjet,etc) or you are not on Jet"
+  echo " Don't use the 'kjet' optin if you will run GSI on other jet (such as xjet,etc) or you are NOT on Jet"
   echo ""
   echo "NOTE: This script is for internal developer use only;"
   echo "See User's Guide for detailed build instructions"
